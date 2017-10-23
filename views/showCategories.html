@@ -1,7 +1,4 @@
-
-<li ng-repeat="category in $ctrl.list" ui-sref= "items({categoryId:index})">
-<button type="button" class="btn btn-default" aria-label="Left Align">
-<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+<button type="button" class="btn btn-primary btn-lg btn-block" aria-label="Left Align"
+ng-repeat="category in $ctrl.list" ui-sref= "categories.items({categoryId: category.short_name})">
+<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> {{category.name}}
 </button>
-  {{category.name}}
-</li>

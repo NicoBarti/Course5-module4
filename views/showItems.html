@@ -1,0 +1,17 @@
+<div class="panel panel-default">
+  <div class="panel-heading" ng-if="$ctrl.instructions">Special instructions: {{$ctrl.instructions}}</div>
+  <table class="table">
+    <tr>
+      <th>Menu</th>
+      <th>Description</th>
+      <th>Price small</th>
+      <th>Price large</th>
+    </tr>
+    <tr ng-repeat="item in $ctrl.list">
+      <th>{{item.name}}</th>
+      <th>{{item.description}}</th>
+      <th>{{item.price_small}}</th>
+      <th>{{item.price_large}}</th>
+    </tr>
+  </table>
+</div>
