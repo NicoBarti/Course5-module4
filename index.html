@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Module 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/bootstrap.min.css"></link>
+
+<!-- Libraries -->
+    <script type="text/javascript" src="/lbr/angular.min.js"></script>
+    <script src="/lbr/angular-ui-router.min.js"></script>
+
+<!-- Angular modules -->
+<script type="text/javascript" src="/app/menuapp.module.js"></script>
+<script type="text/javascript" src="/app/data/data.module.js"></script>
+
+<!-- APP Artifacts -->
+<script type="text/javascript" src="/app/routes.js"></script>
+<script type="text/javascript" src="/app/data/menudata.service.js"></script>
+<script type="text/javascript" src="/app/data/data.Controller.js"></script>
+<script type="text/javascript" src="/app/categories.component.js"></script>
+
+  </head>
+
+<body ng-app="MenuApp">
+<div class="container">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header"> <h1>Restorant</h1>
+      </div>
+    </div>
+  </nav>
+
+<ui-view></ui-view>
+
+</div>
+
+</html>
+
+</body>
